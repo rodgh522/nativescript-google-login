@@ -1,0 +1,1 @@
+/// <reference path="../@nativescript/types/index.d.ts" />
