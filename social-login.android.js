@@ -85,7 +85,7 @@ export class SocialLogin extends Common {
         .build();
 
         console.log('gso', gso);
-        this.defaultConfig.activity = Application.android.foregroundActivity;
+        this.defaultConfig.activity = Application.android.foregroundActivity || Application.android.startActivity;
         this.config = this.defaultConfig;
         this.googleClient = com.google.android.gms.auth.api.signin.GoogleSignIn.getClient(this.config.activity, gso);
     }
